@@ -1,0 +1,85 @@
+.editContact {
+  width: 100%;
+  display: flex;
+}
+
+.editContact form {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.editContact form .editContactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.editContactForm .title h2 {
+  color: #646060;
+}
+
+.editContactForm .box {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.editContactForm .box img {
+  border-radius: 50%;
+}
+
+.editContactForm .box label {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.editContactForm .box input {
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  padding: 10px;
+  background: #646060;
+  color: #fff;
+}
+
+.editContactForm .box input:focus {
+  border: none;
+  outline: none;
+}
+
+.editContactForm .box input::placeholder {
+  color: #fff;
+}
+
+.editContactForm .box textarea {
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  padding: 10px;
+  background: #646060;
+  color: #fff;
+}
+
+.editContactForm .box textarea::placeholder {
+  color: #fff;
+}
+
+.editContactForm .box textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.editContactForm .box button {
+  padding: 7px 50px;
+  color: #fff;
+  background: #696868;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #8a8787;
+}

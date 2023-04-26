@@ -1,0 +1,85 @@
+.addContact {
+  width: 100%;
+  display: flex;
+}
+
+.addContact form {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.addContact form .addContactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.addContactForm .title h2 {
+  color: #646060;
+}
+
+.addContactForm .box {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.addContactForm .box img {
+  border-radius: 50%;
+}
+
+.addContactForm .box label {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.addContactForm .box input {
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  padding: 10px;
+  background: #646060;
+  color: #fff;
+}
+
+.addContactForm .box input:focus {
+  border: none;
+  outline: none;
+}
+
+.addContactForm .box input::placeholder {
+  color: #fff;
+}
+
+.addContactForm .box textarea {
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  padding: 10px;
+  background: #646060;
+  color: #fff;
+}
+
+.addContactForm .box textarea::placeholder {
+  color: #fff;
+}
+
+.addContactForm .box textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.addContactForm .box button {
+  padding: 7px 50px;
+  color: #fff;
+  background: #696868;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #8a8787;
+}

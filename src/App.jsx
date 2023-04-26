@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="App">
       <header>
-        <h1>Contact List</h1>
+        <h1>Contact List App</h1>
       </header>
       <Switch>
         <Route path="/" exact component={ContactList} />
