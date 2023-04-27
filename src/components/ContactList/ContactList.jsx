@@ -2,8 +2,10 @@ import userImage from "../../assets/userImage.jfif";
 import { FaTrashAlt, FaEdit } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./ContactList.css";
+import { useContacts } from "../../AppProvider";
 
 const ContactList = () => {
+  const contacts = useContacts();
   return (
     <main className="contactList">
       <div className="title">
@@ -12,27 +14,36 @@ const ContactList = () => {
           <button type="button">Add</button>
         </Link>
       </div>
-      <Link to="/detail">
-        <div className="contact">
-          <div className="userProfile">
-            <img src={userImage} alt="user" width={70} height={70} />
+      {contacts.map((c) => {
+        return (
+          <div className="contact" key={c.id}>
+            <div className="userProfile">
+              <img
+                src={c.imgSrc || userImage}
+                alt="user"
+                width={70}
+                height={70}
+              />
+              <Link to="/edit">
+                <button type="button">
+                  <FaEdit />
+                </button>
+              </Link>
+            </div>
             <Link to="/edit">
-              <button type="button">
-                <FaEdit />
-              </button>
+              <div className="user-data">
+                <h4>{c.name}</h4>
+                <p>{c.phone}</p>
+              </div>
             </Link>
+            <div className="actionBtn">
+              <button type="button">
+                <FaTrashAlt />
+              </button>
+            </div>
           </div>
-          <div className="user-data">
-            <h4>Abolfazl</h4>
-            <p>09108665521</p>
-          </div>
-          <div className="actionBtn">
-            <button type="button">
-              <FaTrashAlt />
-            </button>
-          </div>
-        </div>
-      </Link>
+        );
+      })}
     </main>
   );
 };
