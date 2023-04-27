@@ -25,13 +25,13 @@ const ContactList = () => {
           <div className="contact" key={c.id}>
             <div className="userProfile">
               <img src={userImage} alt="user" width={70} height={70} />
-              <Link to="/edit">
+              <Link to={`/edit/${c.id}`}>
                 <button type="button">
                   <FaEdit />
                 </button>
               </Link>
             </div>
-            <Link to="/detail">
+            <Link to={`/detail/${c.id}`}>
               <div className="user-data">
                 <h4>{c.name}</h4>
                 <p>{c.phone}</p>

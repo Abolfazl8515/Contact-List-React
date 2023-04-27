@@ -22,6 +22,16 @@ const reducer = (state, action) => {
       const filtredContacts = state.filter((c) => c.id !== action.id);
       return filtredContacts;
     }
+    case "edit": {
+      const allContacts = [...state];
+      const index = allContacts.findIndex((c) => c.id === action.id);
+      const selectedContact = allContacts.find((c) => c.id === action.id);
+      selectedContact.name = action.name;
+      selectedContact.phone = action.phone;
+      selectedContact.desc = action.desc;
+      allContacts[index] = selectedContact;
+      return allContacts;
+    }
 
     default:
       break;

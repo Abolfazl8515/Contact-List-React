@@ -16,8 +16,8 @@ const App = () => {
         <Switch>
           <Route path="/" exact component={ContactList} />
           <Route path="/add" exact component={AddContact} />
-          <Route path="/edit" exact component={EditContact} />
-          <Route path="/detail" exact component={ContactDetail} />
+          <Route path="/edit/:id" exact component={EditContact} />
+          <Route path="/detail/:id" exact component={ContactDetail} />
         </Switch>
       </AppProvider>
     </div>

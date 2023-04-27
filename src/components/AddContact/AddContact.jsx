@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { useContactsActions } from "../../AppProvider";
-import userImage from "../../assets/userImage.jfif";
 import "./AddContact.css";
 
-const AddContact = () => {
+const AddContact = ({ history }) => {
   const dispatch = useContactsActions();
   const [contact, setContact] = useState({
     name: "",
@@ -24,6 +23,7 @@ const AddContact = () => {
       phone: contact.phone,
       desc: contact.desc,
     });
+    history.push("/");
   };
 
   return (
