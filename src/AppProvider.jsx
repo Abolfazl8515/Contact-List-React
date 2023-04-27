@@ -14,10 +14,13 @@ const reducer = (state, action) => {
         name: action.name,
         phone: action.phone,
         desc: action.desc,
-        imgSrc: action.src,
       };
       allContacts.push(contactData);
       return allContacts;
+    }
+    case "delete": {
+      const filtredContacts = state.filter((c) => c.id !== action.id);
+      return filtredContacts;
     }
 
     default:

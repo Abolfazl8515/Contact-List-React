@@ -10,10 +10,6 @@ const EditContact = () => {
             <h2>Edit Contact</h2>
           </div>
           <div className="box">
-            <img src={userImage} alt="user" />
-            <input type="file" name="file" />
-          </div>
-          <div className="box">
             <label htmlFor="contact-name">New Name:</label>
             <input type="text" name="name" placeholder="New Name..." />
           </div>
