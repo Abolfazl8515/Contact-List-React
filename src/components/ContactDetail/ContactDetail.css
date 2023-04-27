@@ -1,0 +1,49 @@
+.contactDetail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title h2 {
+  color: #646060;
+}
+
+.box {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.box img {
+  border-radius: 50%;
+}
+
+.box p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.box .btn {
+  padding: 7px 50px;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #8a8787;
+  margin: 0 10px;
+}
+
+.box .editBtn {
+  background: transparent;
+  border: 1px solid #10b981;
+  color: #10b981;
+}
+
+.box .deleteBtn {
+  background: transparent;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+}

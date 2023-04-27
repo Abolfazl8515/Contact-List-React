@@ -23,11 +23,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
 }
 
 .editContactForm .box img {
   border-radius: 50%;
+  width: 120px;
+  height: 120px;
 }
 
 .editContactForm .box label {
