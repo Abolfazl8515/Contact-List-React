@@ -17,3 +17,9 @@
   font-weight: 800;
   color: #fff;
 }
+
+@media (max-width: 870px) {
+  .App header h1 {
+    font-size: 1.8rem;
+  }
+}

@@ -9,7 +9,7 @@
 }
 
 .box {
-  width: 800px;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,11 @@
 }
 
 .box .btn {
-  padding: 7px 50px;
+  width: 220px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   border: none;
   border-radius: 7px;
@@ -46,4 +50,15 @@
   background: transparent;
   border: 1px solid #ef4444;
   color: #ef4444;
+}
+
+@media (max-width: 870px) {
+  .box {
+    width: 100%;
+    flex-direction: column;
+  }
+  .box .btn {
+    width: 220px;
+    margin: 10px 0;
+  }
 }
